@@ -45,3 +45,6 @@ Route::get('/page', function () {
     })->name('Ты пидорас');
 });*/
 Route::get('/about/{id}', 'TestController@show');
+
+Route::get('/articles', 'Admin\Core@getArticles');
+Route::get('/article/{id}', 'Admin\Core@getArticle');
