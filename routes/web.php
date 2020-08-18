@@ -20,7 +20,7 @@ Route::get('/', function () {
 Route::get('/about/{id}', 'TestController@show');
 
 Route::get('/articles', 'Admin\Core@getArticles')->name('articles');
-Route::get('/article/{id}', 'Admin\Core@getArticle')->name('article');
+Route::get('/article/{page}', 'Admin\Core@getArticle')->name('article')->middleware('mymiddle');
 
 /**
  * list pages
