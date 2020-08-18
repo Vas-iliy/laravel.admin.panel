@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ef682e-1d16-43f7-a2bd-ee8ef34bd400" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/laravel.admin.panel.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/laravel.admin.panel.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -197,7 +190,7 @@
       <updated>1596805221413</updated>
       <workItem from="1596805223641" duration="986000" />
       <workItem from="1596819012737" duration="2332000" />
-      <workItem from="1597772286313" duration="3033000" />
+      <workItem from="1597772286313" duration="4371000" />
     </task>
     <servers />
   </component>

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 Route::get('/page', function () {
     echo 'Пошел на хуй';
 });
@@ -37,9 +37,10 @@ Route::get('/page/{cat}/{id}', function ($cat, $id) {
 
 Route::group(['prefix' => 'admin'], function () {
    Route::get('page/create', function () {
-       echo 'page/create';
+       return redirect()->route('home');
    });
     Route::get('page/edit', function () {
-        echo 'page/edit';
-    });
+        $rote = Route::current();
+        var_dump($rote->getName());
+    })->name('Ты пидорас');
 });
