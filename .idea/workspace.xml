@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="93ef682e-1d16-43f7-a2bd-ee8ef34bd400" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/testRoutes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/CoreResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/CoreResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/testRoutes.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/testRoutes.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -162,6 +164,11 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="Laravel.SettingsForm" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\server\OpenServer\domains\laravel.admin.panel\routes" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -192,7 +199,7 @@
       <updated>1596805221413</updated>
       <workItem from="1596805223641" duration="986000" />
       <workItem from="1596819012737" duration="2332000" />
-      <workItem from="1597772286313" duration="6683000" />
+      <workItem from="1597772286313" duration="7910000" />
     </task>
     <servers />
   </component>

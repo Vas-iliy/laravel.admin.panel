@@ -21,3 +21,9 @@ Route::get('/about/{id}', 'TestController@show');
 
 Route::get('/articles', 'Admin\Core@getArticles')->name('articles');
 Route::get('/article/{id}', 'Admin\Core@getArticle')->name('article');
+
+/**
+ * list pages
+ */
+Route::get('pages/add', 'Admin\CoreResource@add');
+Route::resource('/pages', 'Admin\CoreResource');
