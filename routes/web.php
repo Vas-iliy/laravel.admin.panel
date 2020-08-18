@@ -44,4 +44,4 @@ Route::get('/page', function () {
         var_dump($rote->getName());
     })->name('Ты пидорас');
 });*/
-Route::get('/about', 'TestController@show');
+Route::get('/about/{id}', 'TestController@show');

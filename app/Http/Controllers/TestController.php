@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class TestController extends Controller
 {
-    public function show () {
-        echo __METHOD__;
+    protected function show ($id) {
+        echo $id;
     }
 }
