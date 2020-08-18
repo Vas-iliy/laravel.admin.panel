@@ -16,35 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
-Route::get('/page', function () {
-    echo 'Пошел на хуй';
-});
-/*Route::post('/comments', function () {
-    print_r($_POST);
-});*/
-/*Route::match(['get', 'post'], '/comments', function () {
-    print_r($_POST);
-});*/
-/*Route::any('/comments', function () {
-    print_r($_POST);
-});*/
-/*Route::get('/page/{cat}/{id}', function ($cat, $id) {
-    echo $id  . ' ' . 'Пошел на хуй';
-})->where([
-    /*'id' => '[0-9]+',*/
-    /*'cat' => '[A-Za-z]+'
-]);*/
 
-/*Route::group(['prefix' => 'admin'], function () {
-   Route::get('page/create', function () {
-       return redirect()->route('home');
-   });
-    Route::get('page/edit', function () {
-        $rote = Route::current();
-        var_dump($rote->getName());
-    })->name('Ты пидорас');
-});*/
 Route::get('/about/{id}', 'TestController@show');
 
-Route::get('/articles', 'Admin\Core@getArticles');
-Route::get('/article/{id}', 'Admin\Core@getArticle');
+Route::get('/articles', 'Admin\Core@getArticles')->name('articles');
+Route::get('/article/{id}', 'Admin\Core@getArticle')->name('article');
