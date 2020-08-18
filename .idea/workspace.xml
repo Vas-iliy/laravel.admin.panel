@@ -146,7 +146,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1fluuNNqMy9iMJm7lDKdP1BNFYs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -190,7 +192,7 @@
       <updated>1596805221413</updated>
       <workItem from="1596805223641" duration="986000" />
       <workItem from="1596819012737" duration="2332000" />
-      <workItem from="1597772286313" duration="4371000" />
+      <workItem from="1597772286313" duration="5548000" />
     </task>
     <servers />
   </component>

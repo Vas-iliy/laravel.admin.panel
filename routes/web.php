@@ -28,14 +28,14 @@ Route::get('/page', function () {
 /*Route::any('/comments', function () {
     print_r($_POST);
 });*/
-Route::get('/page/{cat}/{id}', function ($cat, $id) {
+/*Route::get('/page/{cat}/{id}', function ($cat, $id) {
     echo $id  . ' ' . 'Пошел на хуй';
 })->where([
     /*'id' => '[0-9]+',*/
-    /*'cat' => '[A-Za-z]+'*/
-]);
+    /*'cat' => '[A-Za-z]+'
+]);*/
 
-Route::group(['prefix' => 'admin'], function () {
+/*Route::group(['prefix' => 'admin'], function () {
    Route::get('page/create', function () {
        return redirect()->route('home');
    });
@@ -43,4 +43,5 @@ Route::group(['prefix' => 'admin'], function () {
         $rote = Route::current();
         var_dump($rote->getName());
     })->name('Ты пидорас');
-});
+});*/
+Route::get('/about', 'TestController@show');
