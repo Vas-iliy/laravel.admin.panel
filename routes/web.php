@@ -26,4 +26,5 @@ Route::get('/article/{id}', 'Admin\Core@getArticle')->name('article');
  * list pages
  */
 Route::get('pages/add', 'Admin\CoreResource@add');
+
 Route::resource('/pages', 'Admin\CoreResource');
