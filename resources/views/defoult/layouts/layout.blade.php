@@ -13,6 +13,7 @@
 </head>
 <body>
 
+@section('navbar')
 <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -21,14 +22,16 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li class="active"><a href="{{route('home')}}">Home</a></li>
+                <li ><a href="{{route('about')}}">About</a></li>
                 <li ><a href="{{route('articles')}}">Articles</a></li>
                 <li ><a href="{{route('article', ['id' => 10])}}">Article</a></li>
-                <li ><a href="{{route('about')}}">About</a></li>
             </ul>
         </div><!--/.navbar-collapse -->
     </div>
 </nav>
+@show
 
+@section('header')
 <!-- Main jumbotron for a primary marketing message or call to action -->
 <div class="jumbotron">
     <div class="container">
@@ -37,13 +40,14 @@
         <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
     </div>
 </div>
+@show
 
 <div class="container">
     <!-- Example row of columns -->
     <div class="row">
 
-
         <div class="col-md-3">
+            @section('sidebar')
             <div class="sidebar-module">
                 <h2>Archives</h2>
                 <ol class="list-unstyled">
@@ -61,34 +65,10 @@
                     <li><a href="#">April 2013</a></li>
                 </ol>
             </div>
+            @show
         </div>
 
-        <div class="col-md-9">
-            <div class="col-md-6">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-            <div class="col-md-6">
-                <h2>Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-            </div>
-
-            <div style="clear: both"></div>
-            <div class="blog-post">
-                <div class="page-header">
-                    <h1>Sample blog post</h1>
-                </div>
-
-                <p>This blog post shows a few different types of content that's supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-                <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
-                <blockquote>
-                    <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                </blockquote>
-                <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
-            </div>
-        </div>
+        @yield('content')
     </div>
 
     <hr>

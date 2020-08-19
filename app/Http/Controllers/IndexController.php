@@ -8,6 +8,8 @@ class IndexController extends Controller
 {
     public function show () {
         $title = 'Привет пидор';
-        return view('defoult.template', compact('title'));
+        if (view()->exists('defoult.index')) {
+            return view('defoult.index', compact('title'));
+        }
     }
 }
