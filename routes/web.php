@@ -13,14 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+Route::get('/', 'IndexController@show')->name('home');
 
 Route::get('/about/{id}', 'TestController@show');
 
 Route::get('/articles', 'Admin\Core@getArticles')->name('articles');
-Route::get('/article/{page}', 'Admin\Core@getArticle')->name('article')->middleware('mymiddle');
+Route::get('/article/{page}', 'Admin\Core@getArticle')->name('article')->middleware(['mymiddle']);
 
 /**
  * list pages
