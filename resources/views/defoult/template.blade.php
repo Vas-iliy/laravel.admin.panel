@@ -20,7 +20,10 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li></li>
+                <li class="active"><a href="{{route('home')}}">Home</a></li>
+                <li class="active"><a href="{{route('articles')}}">Articles</a></li>
+                <li class="active"><a href="{{route('article', ['id' => 10])}}">Article</a></li>
+                <li class="active"><a href="{{route('about')}}">Article</a></li>
             </ul>
         </div><!--/.navbar-collapse -->
     </div>
