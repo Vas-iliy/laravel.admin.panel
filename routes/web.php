@@ -20,7 +20,7 @@ Route::get('/about', 'Admin\AboutController@show')->name('about');
 Route::get('/articles', 'Admin\Core@getArticles')->name('articles');
 Route::get('/article/{id}', 'Admin\Core@getArticle')->name('article');
 
-Route::match(['get', 'post'], '/contact', 'Admin\ContactController@show')->name('contact');
+Route::match(['get', 'post'], '/contact/{id?}', 'Admin\ContactController@show')->name('contact');
 
 /**
  * list pages
