@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 class IndexController extends Controller
 {
     public function show () {
-        $array = array(
+        /*$array = array(
             'title'=>'Laravel Project',
             'data' =>[
                 'one' => 'List 1',
@@ -20,9 +20,10 @@ class IndexController extends Controller
 
             'bvar' => true,
             'script' =>"<script>alert('hello')</script>"
-        );
+        );*/
+        $title = 'Laravel Project';
         if (view()->exists('defoult.index')) {
-            return view('defoult.index', $array);
+            return view('defoult.index', compact('title'));
         }
     }
 }
