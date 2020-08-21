@@ -9,10 +9,9 @@ use Illuminate\Support\Facades\DB;
 class DifferentController extends Controller
 {
     public function show () {
-        $title = 'Different';
         if (view()->exists('defoult.different')) {
 
-            //DB::insert("INSERT INTO articles (`name`, `text`, `img`) VALUES (?, ?, ?)", ['test 1', 'text', 'img']);
+            /*//DB::insert("INSERT INTO articles (`name`, `text`, `img`) VALUES (?, ?, ?)", ['test 1', 'text', 'img']);
 
             //$result = DB::connection()->getPdo()->lastInsertId();
 
@@ -21,13 +20,15 @@ class DifferentController extends Controller
             //DB::delete("DELETE FROM articles WHERE `id` = ?", [5]);
 
             //DB::statement('DROP table articles');
-            $articles = DB::select('SELECT * FROM articles ');
+            //$articles = DB::select('SELECT * FROM articles ');
 
             //dump($result);
-            dump($articles);
+            //dump($articles);*/
 
+            $page = DB::select('SELECT * FROM page WHERE id = ?', [1]);
+            dump($page);
 
-            return response()->view('defoult.different', compact('title'));
+            return response()->view('defoult.different', compact('page'));
         }
         abort(404);
     }

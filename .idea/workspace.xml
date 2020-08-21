@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="93ef682e-1d16-43f7-a2bd-ee8ef34bd400" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DifferentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DifferentController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/defoult/different.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/defoult/different.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/defoult/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/defoult/layouts/layout.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +178,7 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/defoult/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projects/train/CatSite" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -225,7 +227,7 @@
       <updated>1596805221413</updated>
       <workItem from="1596805223641" duration="986000" />
       <workItem from="1596819012737" duration="2332000" />
-      <workItem from="1597772286313" duration="42635000" />
+      <workItem from="1597772286313" duration="44519000" />
     </task>
     <servers />
   </component>
