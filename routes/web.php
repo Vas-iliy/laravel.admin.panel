@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'IndexController@show')->name('home');
 
-Route::get('/about', 'Admin\AboutController@show')->name('about');
+Route::get('/different', 'Admin\DifferentController@show')->name('different');
 
 Route::get('/articles', 'Admin\Core@getArticles')->name('articles');
 Route::get('/article/{id}', 'Admin\Core@getArticle')->name('article');

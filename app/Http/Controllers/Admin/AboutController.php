@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use phpDocumentor\Reflection\Types\Resource_;
 
 class AboutController extends Controller
@@ -21,10 +22,12 @@ class AboutController extends Controller
 
             //return response()->download('robots.txt', 'nax.txt');
 
+            $articles = DB::select('SELECT * FROM articles');
 
-            return view('defoult.about', compact('title'));
+            dump($articles);
+
+            return response()->view('defoult.index', compact('title'));
         }
-        abort(404);
     }
 
 }
