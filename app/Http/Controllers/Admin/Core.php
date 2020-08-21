@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Article;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -86,6 +87,21 @@ class Core extends Controller
         //$result = DB::table('articles')->where('id', '>', 10)->delete();
 
         //dump($result);
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /////// ТУТ ДЛЯ МОДЕЛИ. ВСЕ ЧТО БЫЛО В КОНСТРУКТОРЕ ЗАПРОСОВ ТУТ ТОЖЕ ДЕЙСТВУЕТ.
+        //$articles = Article::where('id', '>', 3)->get();
+
+        /*foreach ($articles as $article) {
+            echo $article->text . '<br/>';
+        };*/
+
+
+        //dump($articles);
 
     }
 
