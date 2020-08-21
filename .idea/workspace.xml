@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="93ef682e-1d16-43f7-a2bd-ee8ef34bd400" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/DifferentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/DifferentController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/defoult/different.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/defoult/different.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/defoult/layouts/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/defoult/layouts/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/Core.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/Core.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +44,13 @@
         <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="laravel.admin.panel: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="laravel.admin.panel: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="articles: table" type="285a2a93:MysqlImplModel$Table" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
@@ -227,7 +233,7 @@
       <updated>1596805221413</updated>
       <workItem from="1596805223641" duration="986000" />
       <workItem from="1596819012737" duration="2332000" />
-      <workItem from="1597772286313" duration="44519000" />
+      <workItem from="1597772286313" duration="50823000" />
     </task>
     <servers />
   </component>
