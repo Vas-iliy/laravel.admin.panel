@@ -14,7 +14,7 @@ class ChangeArticlesTable extends Migration
     public function up()
     {
         Schema::table('articles', function (Blueprint $table) {
-            $table->string('alias',100);
+            $table->string('alias',100)->default('alias');
         });
     }
 
