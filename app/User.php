@@ -37,7 +37,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    //1:1
     public function country () {
         return $this->hasOne('App\Country');
+    }
+
+    //1:many
+    public function articles () {
+        return $this->hasMany('App\Article');
     }
 }

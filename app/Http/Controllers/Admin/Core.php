@@ -66,12 +66,14 @@ class Core extends Controller
                                                                 [
                                                                     'name' => 'TEST',
                                                                     'text' => 'lalala',
-                                                                    'img' => '1020'
+                                                                    'img' => '1020',
+                                                                    'user_id' => 1
                                                                 ],
                                                                 [
                                                                     'name' => 'TEST10100',
                                                                     'text' => 'lalala',
-                                                                    'img' => '2020'
+                                                                    'img' => '2020',
+                                                                    'user_id' => 1
                                                                 ]
                                                             ]
                                                         );*/
@@ -106,11 +108,24 @@ class Core extends Controller
         //dump($articles);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        /////////////////////////////////////// 1:1
         //$user = User::find(1);
 
         //$country = Country::find(1);
 
         //dump($user->country);  dump($country->user);
+
+        /////////////////////////////////////// 1:many
+        /// тут обращаемся к свойствам
+        /*$user = User::find(1);
+        $articles = $user->articles;
+        foreach ( $articles as $article ) {
+            echo $article->name . '<br/>';
+        }*/
+        /// а тут к методам
+        $user = User::find(1);
+        $articles = $user->articles()->where('id', '>', 5)->get();
+        dump($articles);
     }
 
     /**
