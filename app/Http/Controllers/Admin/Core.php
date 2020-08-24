@@ -123,9 +123,14 @@ class Core extends Controller
             echo $article->name . '<br/>';
         }*/
         /// а тут к методам
-        $user = User::find(1);
+        /*$user = User::find(1);
         $articles = $user->articles()->where('id', '>', 5)->get();
-        dump($articles);
+        dump($articles);*/
+
+        /////////////////////////////////////// many:many
+        $user = User::find(1);
+
+        dump($user->roles);
     }
 
     /**
