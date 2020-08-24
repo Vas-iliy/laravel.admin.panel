@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Article;
+use App\Country;
 use App\Http\Controllers\Controller;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -104,7 +106,11 @@ class Core extends Controller
         //dump($articles);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
+        //$user = User::find(1);
 
+        //$country = Country::find(1);
+
+        //dump($user->country);  dump($country->user);
     }
 
     /**
