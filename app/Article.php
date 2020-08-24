@@ -11,6 +11,15 @@ class Article extends Model
 
     //public $incrementing = false;
     //public $timestamps = false;
+    protected $fillable = [
+        'name',
+        'text',
+        'img',
+        'created_at',
+        'updated_at',
+        'alias',
+        'user_id'
+    ];
 
     public function user () {
         return $this->belongsTo('App\User');

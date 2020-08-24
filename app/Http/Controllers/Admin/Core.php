@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Article;
 use App\Country;
 use App\Http\Controllers\Controller;
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -175,6 +176,48 @@ class Core extends Controller
             dump($user->articles);
         }*/
 
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        $user = User::find(1);
+
+        /*$article = new Article([
+            'name' => 'New Article',
+            'text' => 'Some text',
+            'img' => 'img'
+        ]);*/
+
+        //$user->articles()->save($article);
+
+        /*$user->articles()->create([
+            'name' => 'New Article',
+            'text' => 'Some text',
+            'img' => 'img'
+        ]);*/
+
+        /*$user->articles()->saveMany([
+            new Article([
+                'name' => 'New Article1',
+                'text' => 'Some text1',
+                'img' => 'img'
+            ]),
+            new Article([
+                'name' => 'New Article2',
+                'text' => 'Some text2',
+                'img' => 'img'
+            ]),
+            new Article([
+                'name' => 'New Article3',
+                'text' => 'Some text3',
+                'img' => 'img'
+            ]),
+        ]);*/
+
+        /*$articles = Article::all();
+        dump($articles);*/
+
+        $role = new Role(['name' => 'quest']);
+        $user->roles()->save($role);
     }
 
     /**
