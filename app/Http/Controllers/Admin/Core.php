@@ -99,11 +99,34 @@ class Core extends Controller
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////
         /////// ТУТ ДЛЯ МОДЕЛИ. ВСЕ ЧТО БЫЛО В КОНСТРУКТОРЕ ЗАПРОСОВ ТУТ ТОЖЕ ДЕЙСТВУЕТ.
-        //$articles = Article::where('id', '>', 3)->get();
 
-        /*foreach ($articles as $article) {
-            echo $article->text . '<br/>';
-        };*/
+        //$articles = Article::all();
+
+        //$articles = Article::where('id', '>', 7)->orderBy('id', 'desc')->take(2)->get();
+
+        /*//поиск одного
+        $article = Article::find(10);
+        echo $article->text;
+        //то же самое
+        $article = Article::where('id', 10)->first();
+        echo $article->text;*/
+        //$articles = Article::find([1,2,10]);
+
+        //$article = Article::findOrFail(100); найти это или исключение, страница 404
+        //то же самое
+        //$article = Article::where('id', 10)->firstOrFail();
+
+        //Запись в таблицу
+        /*$article = new Article();
+        $user = User::find(1);
+
+        $article->name = 'Какая-то хуетень';
+        $article->text = 'Тоже хуетень';
+        $article->img = 'хуетень';
+
+        $user->articles()->save($article);
+
+        $articles = Article::all();*/
 
 
         //dump($articles);
@@ -179,7 +202,7 @@ class Core extends Controller
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-        $user = User::find(1);
+        //$user = User::find(1);
 
         /*$article = new Article([
             'name' => 'New Article',
@@ -216,8 +239,12 @@ class Core extends Controller
         /*$articles = Article::all();
         dump($articles);*/
 
-        $role = new Role(['name' => 'quest']);
-        $user->roles()->save($role);
+        /*$role = new Role(['name' => 'quest']);
+        $user->roles()->save($role);*/
+
+        /*$user->articles()->where('id', '=', '10')->update([
+            'name' => 'New Text'
+        ]);*/
     }
 
     /**
