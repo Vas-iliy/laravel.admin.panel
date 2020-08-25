@@ -128,8 +128,48 @@ class Core extends Controller
 
         $articles = Article::all();*/
 
+        //только уникальные записи в каждой ячейке таблицы
+        /*Article::firstOrCreate([
+            'name' => 'lalala',
+            'text' => 'n'
+        ]);*/
 
-        //dump($articles);
+        //только уникальные записи в каждой ячейке таблицы с проверкой
+        /*$a = Article::firstOrNew([
+            'name' => 'lalala',
+            'text' => 'n'
+        ]);
+        $a->save();*/
+
+        //////Удаление
+        //$article = Article::find(13);
+        //$article->delete();
+
+        //////Удаление мягкое
+        /*$article = Article::find(14);
+        $article->delete();*/
+
+        //проверка, в карзине ли запись
+        /*$articles = Article::withTrashed()->get();
+        foreach ($articles as $article) {
+            if ($article->trashed()) {
+                echo $article->id . 'Удалена<br/>';
+            }
+            else {
+                echo $article->id . 'Не удалена<br/>';
+            }
+        }*/
+
+        //вытаскивание записи из карзины
+        //$articles = Article::onlyTrashed()->restore();
+
+        //безвозвратно удалить запись, когда мы работаем с мягким удалением
+        /*$article = Article::find(14);
+        $article->forceDelete();*/
+
+        //Article::destroy([10,12]);
+
+        //dump($article);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////
 
         /////////////////////////////////////// 1:1
