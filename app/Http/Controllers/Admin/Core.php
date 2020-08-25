@@ -285,6 +285,49 @@ class Core extends Controller
         /*$user->articles()->where('id', '=', '10')->update([
             'name' => 'New Text'
         ]);*/
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //1:1
+        /*$country = Country::find(1);
+        $user = User::find(2);
+
+        //привязываем пользователя к стране
+        $country->user()->associate($user);
+        $country->save();*/
+
+        //1:many
+        /*$articles = Article::all();
+        $user = User::find(2);
+        foreach ($articles as $article) {
+            $article->user()->associate($user);
+            $article->save();
+        }*/
+
+        //many:many
+        /*$user = User::find(2);
+        $role_id = Role::find(2)->id;
+        $user->roles()->attach($role_id);//создание связи
+        $user->roles()->detach($role_id);//удаление связи*/
+
+
+ /////////////////////////////////////////////////////////////////////////////////////////////////////////
+        /*$article = Article::find(9);
+
+        $article->name = 'lalala';
+        echo $article->name;*/
+
+        //$article = Article::find(9);
+        //$array = ['key' => 'Hi'];
+        //$article->text = $array;
+
+        //$article->save();
+        $article = Article::find(5);
+        dump($article->toArray());
+
+
+
     }
 
     /**

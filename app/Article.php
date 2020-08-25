@@ -29,4 +29,21 @@ class Article extends Model
     public function user () {
         return $this->belongsTo('App\User');
     }
+
+    //преобразование типов данных
+    /*protected $casts = [
+        'name' => 'boolean',
+        'text' => 'array'
+    ];*/
+
+/*
+    //метод читатель
+    public function getNameAttribute ($value) {
+        return 'Hi - ' . $value;
+    }
+
+    //метод преобразователь
+    public function setNameAttribute ($value) {
+        $this->attributes['name'] = $value . 'Тут был я';
+    }*/
 }
