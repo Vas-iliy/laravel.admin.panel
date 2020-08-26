@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ContactRequest;
 use Illuminate\Http\Request;
 
 class ContactController extends Controller
@@ -13,7 +14,7 @@ class ContactController extends Controller
         $this->request = $request;
     }*/
 
-    public function show (Request $request, $id = false) {
+    public function store (ContactRequest $request, $id = false) {
         /*if ($request->has('name')) {
             echo '<h1 style="margin-top: 100px">' . $request->input('name') . '<h1>';
         }*/
@@ -54,7 +55,7 @@ class ContactController extends Controller
 
         }*/
 
-        if ($request->isMethod('post')) {
+        /*if ($request->isMethod('post')) {
 
             $rules = [
                 //'name'=> 'after:tomorrow',//время более позднее
@@ -76,8 +77,13 @@ class ContactController extends Controller
             $this->validate($request, $rules);
             dump($request->all());
 
-        }
+        }*/
 
+        $title = 'Contacts';
+        return view('defoult.contact', compact('title'));
+    }
+
+    public function show () {
         $title = 'Contacts';
         return view('defoult.contact', compact('title'));
     }

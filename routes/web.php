@@ -20,7 +20,8 @@ Route::get('/different', 'Admin\DifferentController@show')->name('different');
 Route::get('/articles', 'Admin\Core@getArticles')->name('articles');
 Route::get('/article/{id}', 'Admin\Core@getArticle')->name('article');
 
-Route::match(['get', 'post'], '/contact/{id?}', 'Admin\ContactController@show')->name('contact');
+Route::get( '/contact/{id?}', 'Admin\ContactController@show')->name('contact');
+Route::post( '/contact/{id?}', 'Admin\ContactController@store');
 
 /**
  * list pages
