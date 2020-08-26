@@ -37,13 +37,11 @@ class ContactController extends Controller
 
         //print_r($request->server());
 
-        print_r($request->segments());
+        //print_r($request->segments());
 
 
 
-
-
-        if ($request->isMethod('POST')) {
+        /*if ($request->isMethod('POST')) {
 
             /////
 
@@ -54,6 +52,16 @@ class ContactController extends Controller
             //$request->flash(); сохранение данных в сессию
             return redirect()->route('contact')->withInput();
 
+        }*/
+
+        if ($request->isMethod('post')) {
+            $rules = [
+                'name'=> 'required|max:10',
+                'email'=> 'required|email'
+            ];
+            $this->validate($request, $rules);
+
+            dump($request->all());
         }
 
         $title = 'Contacts';
