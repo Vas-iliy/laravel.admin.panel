@@ -55,6 +55,7 @@ class ContactController extends Controller
         }*/
 
         if ($request->isMethod('post')) {
+
             $rules = [
                 //'name'=> 'after:tomorrow',//время более позднее
                 //'name'=> 'alpha',//только алфовитные символы
@@ -73,8 +74,8 @@ class ContactController extends Controller
                 //'email'=> 'required|email'
             ];
             $this->validate($request, $rules);
-
             dump($request->all());
+
         }
 
         $title = 'Contacts';
