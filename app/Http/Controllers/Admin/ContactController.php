@@ -56,8 +56,21 @@ class ContactController extends Controller
 
         if ($request->isMethod('post')) {
             $rules = [
-                'name'=> 'required|max:10',
-                'email'=> 'required|email'
+                //'name'=> 'after:tomorrow',//время более позднее
+                //'name'=> 'alpha',//только алфовитные символы
+                //'name'=> 'alpha_dash',//только алфовитные символы, цифры, _, -
+                //'name'=> 'alpha_num',//только алфовитные символы, цифры
+                //'name'=> 'before:date',//время более раннее
+                //'name'=> 'between:2,5',//между этими значениями
+                //'name'=> 'confirmed',//одно поле должно быть точно такое же как и другое "??_confirmation"
+                //'name'=> 'different:email',//одно поле должно отличаться от другого
+                //'name'=> 'exists:table',//проверяет, есть ли в таблице поле
+                //'name'=> 'in:1,2,10|not_in:0,5',//значение это один из параметров
+                //'name'=> 'integer',
+                //'name'=> 'string',
+                //'name'=> 'same:email',// поле должно быть точно такое же как и email
+                //'name'=> 'unique:users,name',// поле должно быть уникальной в таблице и столбце
+                //'email'=> 'required|email'
             ];
             $this->validate($request, $rules);
 
