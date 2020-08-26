@@ -28,3 +28,7 @@ Route::post( '/contact/{id?}', 'Admin\ContactController@store');
  */
 /*Route::get('pages/add', 'Admin\CoreResource@add');
 Route::resource('/pages', 'Admin\CoreResource');*/
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

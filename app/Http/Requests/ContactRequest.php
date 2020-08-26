@@ -24,12 +24,14 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required'
+            'name' => 'required',
+            'email' => 'max:10|required'
         ];
     }
-    public function massages () {
-        return [
 
+    public function messages () {
+        return [
+            'name.required' => 'Поле :attribute обязательно к заполнению'
         ];
     }
 }
